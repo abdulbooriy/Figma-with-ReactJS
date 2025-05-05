@@ -1,0 +1,54 @@
+.header {
+  width: 100%;
+  position: absolute;
+  &__navbar {
+    height: 70px;
+    color: var(--bg--main--primary);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__logo {
+    display: flex;
+    align-items: center;
+    padding: 23px 0;
+    gap: 1px;
+    cursor: pointer;
+    p {
+      span {
+        font-family: var(--bg--font--family), sans-serif;
+        color: var(--bg--main--primary);
+      }
+    }
+  }
+  &__collection {
+    display: flex;
+    list-style: none;
+    gap: 27px;
+    font-family: var(--bg--font--family), sans-serif;
+    font-weight: var(--bg--text--primary);
+  }
+
+  &__options {
+    display: flex;
+    gap: 16px;
+    cursor: pointer;
+    .shopping__cart__icon__counter {
+      position: relative;
+      .shopping__cart__counter {
+        width: 13px;
+        height: 13px;
+        background: var(--bg--color--blue);
+        border-radius: 50%;
+        color: var(--bg--main--primary);
+        position: absolute;
+        bottom: 12px;
+        right: 12px;
+        text-align: center;
+        font-size: 10px;
+        font-weight: var(--bg--text--primary);
+        font-family: var(--bg--font--family), sans-serif;
+      }
+    }
+  }
+}

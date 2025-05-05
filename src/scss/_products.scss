@@ -1,0 +1,125 @@
+.products {
+  margin-top: 135px;
+  .title {
+    text-align: center;
+    p {
+      span {
+        color: var(--bg--color--blue);
+        font-weight: var(--bg--text--primary);
+        font-family: var(--bg--font--family--inter), sans-serif;
+      }
+    }
+
+    h3 {
+      font-size: 36px;
+      font-weight: 700;
+      font-family: var(--bg--font--family--inter), sans-serif;
+    }
+  }
+
+  .view__more__button {
+    width: 196px;
+    height: 46px;
+    background: var(--bg--color--blue);
+    border-radius: 15px;
+    border: none;
+    margin-top: 69px;
+    span {
+      font-size: 18px;
+      font-weight: 500;
+      font-family: var(--bg--font--family), sans-serif;
+      color: var(--bg--main--primary);
+    }
+  }
+
+  .view__more__button:hover {
+    background: blue;
+  }
+}
+
+.products__wrapper {
+  margin-top: 65px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 49px;
+  row-gap: 170px;
+
+  .product__card {
+    width: 335px;
+    height: 337px;
+    background: var(--bg--secondary);
+    display: flex;
+    flex-direction: column;
+    padding-top: 11px;
+    position: relative;
+
+    &__image {
+      padding: 29px 41px;
+    }
+
+    &__body {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+
+      h3 {
+        font-size: 24px;
+        font-weight: 600;
+        font-family: var(--bg--font--family), sans-serif;
+      }
+      p {
+        span {
+          font-size: 20px;
+          font-weight: var(--bg--text--primary);
+          color: var(--bg-primary);
+          font-family: var(--bg--font--family), sans-serif;
+          text-decoration: line-through;
+        }
+        strong {
+          font-size: 24px;
+          font-weight: 600;
+          font-family: var(--bg--font--family), sans-serif;
+          color: #000000;
+          padding-left: 3px;
+        }
+      }
+      &__stars {
+        display: flex;
+        justify-content: center;
+        gap: 7px;
+      }
+    }
+
+    .product__card__favourite {
+      .favourite__button {
+        position: absolute;
+        width: 38px;
+        height: 38px;
+        background: #ff6b6b;
+        border-radius: 50%;
+        top: 56px;
+        right: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    .product__card__shopping__bucket {
+      .shopping__bucket {
+        position: absolute;
+        width: 38px;
+        height: 38px;
+        background: var(--bg--color--blue);
+        border-radius: 50%;
+        top: 10px;
+        right: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}
